@@ -12,6 +12,13 @@ impl Rectangle {
     fn can_hold(&self, other_rectangle: &Rectangle) -> bool {
         self.width > other_rectangle.width && self.height > other_rectangle.height
     }
+
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
 }
 
 fn main() {
